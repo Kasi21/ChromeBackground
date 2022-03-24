@@ -1,0 +1,28 @@
+{
+    "name": "Twitter backgrounds",
+    "description": "Adds custom backgrounds to Twitter",
+    "version": "1.0",
+    "manifest_version": 2,
+    "icons": {
+        "16": "/images/icon_test.png",
+        "48": "/images/icon_test.png",
+        "128": "/images/icon_test.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "/images/icon_test.png",
+            "48": "/images/icon_test.png",
+            "128": "/images/icon_test.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.twitter.com/*"
+            ],
+            "css": [
+                "main.css"
+            ]
+        }
+    ]
+}
