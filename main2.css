@@ -1,0 +1,8 @@
+
+/* This is for setting the main background image */
+html body {
+    /*background-image: url('chrome-extension://__MSG_@@extension_id__/images/background.jpg') !important;*/
+    background:linear-gradient(0deg, #1c1a1a2e, #1c1a1a2e), url('chrome-extension://__MSG_@@extension_id__/images/background2.jpg'); 
+    background-size: cover;
+    background-attachment: fixed
+} 
