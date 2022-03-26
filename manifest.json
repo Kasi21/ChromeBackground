@@ -1,8 +1,8 @@
 {
-    "name": "Twitter backgrounds",
-    "description": "Adds custom backgrounds to Twitter",
+    "name": "Google backgrounds",
+    "description": "Adds custom backgrounds to Google",
     "version": "1.0",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "icons": {
         "16": "/images/icon_test.png",
         "48": "/images/icon_test.png",
@@ -18,11 +18,21 @@
     "content_scripts": [
         {
             "matches": [
-                "*://*.twitter.com/*"
+                "https://www.google.com/*"
             ],
             "css": [
                 "main.css"
             ]
         }
-    ]
+    ],
+    "web_accessible_resources": [{ 
+        "resources": ["/images/background.jpg"],
+        "matches": ["<all_urls>"]
+      }
+    ], 
+    "action": {
+        "default_icon": "/images/icon_test.png",
+        "default_popup":"popup.html"
+    }, 
+    "permissions": ["activeTab"]
 }
