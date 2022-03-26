@@ -1,2 +1,2 @@
-# TwitterBackground
-Change the Twitter background with an Unsplash image
+# ChromeBackground
+Change Google background with an Unsplash image
